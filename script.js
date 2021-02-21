@@ -50,49 +50,28 @@ function writePassword() {
   return
   };
 };
-
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
   
 generateBtn.addEventListener("click", writePassword); {
-  function generatePassword (){
 
-  function shuffle(masStr) {
-    var masStr="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-={}:'<>?[/].,;0123456789"
-    var arr = masStr.split('');           // Convert String to array
-    
-    arr.sort(function() {
-      return 0.5 - Math.random();
-    });  
-    masStr = arr.join('');                // Convert Array to string
-    return masStr;                        // Return shuffled string
-  }
-  
-  s = shuffle(masStr);
-  
-  console.log(s);
-  /*var charlength = document.querySelector(charlength);
-  var len = Math.ceil(charlength/2);
-    len = len - 1;
-    var lenSpec = charlength-2*len;
-
-    for (i=0;i<len;i++) {
-        password+=upperc.charAt(Math.floor(Math.random()*upperc.length));
-        password+=num.charAt(Math.floor(Math.random()*num.length));
+    function shuffle(masStr) {
+      var arr = masStr.split('');           // Convert String to array
+      
+      arr.sort(function() {
+        return 0.5 - Math.random();
+      });  
+      masStr = arr.join('');                // Convert Array to string
+      return masStr;                        // Return shuffled string
     }
+    
+    var masStr="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-={}:'<>?[/].,;0123456789"
+    
+    s = shuffle(masStr);
+    password = s;
+    
+    var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 
-    for (i=0;i<lenSpec;i++)
-        password+=specialchar.charAt(Math.floor(Math.random()*specialchar.length));
-        password+=lowerc.charAt(Math.floor(Math.random()*lowerc.length));
-
-    password=password.split('').sort(function(){return 0.5-Math.random()}).join('');
-
-  console.log(password);*/
+    console.log(password);
+    
+  function writePassword(s)
   };
-
-  document.getElementById("password").innerHTML
-  function writePassword() {
-    alert (password);
-  }
-};
