@@ -69,9 +69,10 @@ generateBtn.addEventListener("click", writePassword); {
     password = s;
     
     var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-
+    passwordText = '';
     console.log(password);
-    
-  function writePassword(s)
   };
+function password() {
+  password = s;
+  writePassword;
+}
